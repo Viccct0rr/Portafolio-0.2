@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vic — Diseño Gráfico</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<canvas id="bg-particles"></canvas>
+
+<header>
+  <div class="wrap">
+    <div class="navbar">
+
+      <a class="brand" href="#">
+  <span class="brand-logo" aria-hidden="true">
+    <svg viewBox="0 0 32 32">
+      <path d="M4 7L11.5 25L16 14.5L20.5 25L28 7H23.5L20.5 16L16 6L11.5 16L8.5 7H4Z"/>
+    </svg>
+  </span>
+
+  Vic
+</a>
+
+      <nav class="links" id="nav-links">
+        <a href="#destacados" data-nav="destacados">Mejores trabajos</a>
+        <a href="#trabajo" data-nav="trabajo">Trabajo</a>
+        <a href="#sobre-mi" data-nav="sobre-mi">Sobre mí</a>
+        <a href="#contacto" data-nav="contacto">Contacto</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+          <span></span><span></span><span></span>
+        </button>
+
+        <button class="btn-copy" id="copy-btn">Copiar email</button>
+      </div>
+
+    </div>
+
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="#trabajo">Trabajo</a>
+      <a href="#destacados">Mejores trabajos</a>
+      <a href="#sobre-mi">Sobre mí</a>
+    </div>
+  </div>
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero">
+  <div class="wrap hero-grid">
+
+    <div class="hero-text">
+      <h1>
+        <span class="em">¡Hola! Soy Vic</span>, diseñador gráfico con experiencia
+        en componer, editar, crear y dar vida a proyectos visuales de todo tipo.
+      </h1>
+
+      <div class="hero-icons">
+        <a href="#destacados">↓</a>
+        <a href="#sobre-mi">↘</a>
+      </div>
+    </div>
+
+    <div class="hero-photo-wrap">
+      <div class="hero-photo-ring"></div>
+
+      <div class="hero-photo">
+        <!-- <img src="img/vic.webp" alt="Vic Vargas"> -->
+        <span class="ph-icon">Foto</span>
+        <span class="ph-text"><br>300 × 300 px</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ESPECIALIDADES -->
+
+<div class="marquee-wrap">
+  <div class="marquee" id="marquee-track">
+    <span>Modelling 3D</span><b>✦</b>
+    <span>Producción editorial</span><b>✦</b>
+    <span>Ilustración digital</span><b>✦</b>
+    <span>Edición de video</span><b>✦</b>
+    <span>Programación</span><b>✦</b>
+    <span>Diseño digital</span><b>✦</b>
+    <span>Maquetado</span><b>✦</b>
+  </div>
+</div>
+
+
+<!-- MEJORES TRABAJOS -->
+
+<section class="featured reveal" id="destacados">
+
+  <div class="wrap featured-head">
+    <div>
+      <span class="featured-label">Selección destacada</span>
+      <h2>Mis mejores trabajos</h2>
+    </div>
+
+    <div class="carousel-buttons">
+      <button id="carousel-prev" aria-label="Anterior">←</button>
+      <button id="carousel-next" aria-label="Siguiente">→</button>
+    </div>
+  </div>
+
+
+  <div class="wrap carousel-container">
+
+    <div class="featured-viewport" id="featured-carousel">
+
+      <div class="featured-track">
+
+        <div class="featured-group">
+
+          <article class="featured-card">
+            <img src="img/trabajo-1.webp" alt="Proyecto de identidad visual" loading="lazy">
+            <div class="featured-info">
+              <span>Identidad visual</span>
+              <h3>Nombre del proyecto</h3>
+            </div>
+          </article>
+
+          <article class="featured-card">
+            <img src="img/trabajo-2.webp" alt="Proyecto editorial" loading="lazy">
+            <div class="featured-info">
+              <span>Diseño editorial</span>
+              <h3>Nombre del proyecto</h3>
+            </div>
+          </article>
+
+          <article class="featured-card">
+            <img src="img/trabajo-3.webp" alt="Proyecto de packaging" loading="lazy">
+            <div class="featured-info">
+              <span>Packaging</span>
+              <h3>Nombre del proyecto</h3>
+            </div>
+          </article>
+
+          <article class="featured-card">
+            <img src="img/trabajo-4.webp" alt="Proyecto de dirección de arte" loading="lazy">
+            <div class="featured-info">
+              <span>Dirección de arte</span>
+              <h3>Nombre del proyecto</h3>
+            </div>
+          </article>
+
+          <article class="featured-card">
+            <img src="img/trabajo-5.webp" alt="Proyecto de diseño 3D" loading="lazy">
+            <div class="featured-info">
+              <span>Diseño 3D</span>
+              <h3>Nombre del proyecto</h3>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<main class="wrap">
+
+  <!-- TRABAJO -->
+
+  <section class="work" id="trabajo">
+
+    <div class="section-label reveal">Trabajo seleccionado</div>
+
+    <article class="case reveal">
+      <div>
+        <div class="tags-row">
+          <span class="pill">identidad de marca</span>
+        </div>
+
+        <h3>Nombre del proyecto</h3>
+
+        <p>
+          Breve descripción del proyecto, su concepto y
+          la solución gráfica desarrollada.
+        </p>
+      </div>
+
+      <div class="laptop">
+        <div class="screen">Imagen del proyecto</div>
+        <div class="base"></div>
+      </div>
+    </article>
+
+
+    <article class="case reveal">
+      <div>
+        <div class="tags-row">
+          <span class="pill">editorial</span>
+          <span class="pill">tipografía</span>
+        </div>
+
+        <h3>Nombre del proyecto</h3>
+
+        <p>
+          Breve descripción del proyecto, su concepto y
+          la solución gráfica desarrollada.
+        </p>
+      </div>
+
+      <div class="laptop">
+        <div class="screen">Imagen del proyecto</div>
+        <div class="base"></div>
+      </div>
+    </article>
+
+
+    <div class="grid-small">
+
+      <article class="mini reveal">
+        <div class="laptop">
+          <div class="screen">Imagen del proyecto</div>
+          <div class="base"></div>
+        </div>
+        <h4>Packaging de producto</h4>
+        <p>Breve descripción del proyecto.</p>
+      </article>
+
+      <article class="mini reveal">
+        <div class="laptop">
+          <div class="screen">Imagen del proyecto</div>
+          <div class="base"></div>
+        </div>
+        <h4>Sistema de cartelería</h4>
+        <p>Breve descripción del proyecto.</p>
+      </article>
+
+      <article class="mini reveal">
+        <div class="laptop">
+          <div class="screen">Imagen del proyecto</div>
+          <div class="base"></div>
+        </div>
+        <h4>Dirección de arte digital</h4>
+        <p>Breve descripción del proyecto.</p>
+      </article>
+
+      <article class="mini reveal">
+        <div class="laptop">
+          <div class="screen">Imagen del proyecto</div>
+          <div class="base"></div>
+        </div>
+        <h4>Diseño tipográfico</h4>
+        <p>Breve descripción del proyecto.</p>
+      </article>
+
+    </div>
+  </section>
+
+
+  <!-- SOBRE MI -->
+
+  <section class="about" id="sobre-mi">
+
+    <div class="reveal">
+      <h2>Sobre mí</h2>
+
+      <p>
+        Soy diseñador gráfico con un enfoque mas a lo distinto que lo común y normal, me centro en dar espiritu a algo, darle valor, identidad visual, me interesa el diseño que resuelve un problema de
+        comunicación antes de buscar ser bonito. Aparte me encanta crear objetos en 3D, ya sea esculpir o modelar.
+      </p>
+
+      <p>
+        Estudio en Unifranz y voy por el último semestre de mi tercer
+        año de universidad, estoy muy feliz de poder mostrarte algunas cosas que he creado durante este tiempo.Este portafolio forma parte de Proyecto
+        Integrador II.
+      </p>
+    </div>
+
+    <div class="reveal">
+      <p>Herramientas y áreas de trabajo:</p>
+
+      <div class="tags">
+        <span>Adobe Illustrator</span>
+        <span>Blender</span>
+        <span>Procreate</span>
+        <span>Adobe Premiere Pro</span>
+        <span>Adobe Photoshop</span>
+        <span>Adobe InDesign</span>
+        <span>Visual Studio Code</span>
+        <span>Figma</span>
+      </div>
+    </div>
+
+  </section>
+
+</main>
+
+
+<!-- FOOTER -->
+
+<footer class="contact" id="contacto">
+  <div class="wrap">
+
+    <div class="contact-head reveal">
+      <span class="contact-label">Contacto</span>
+      <h2>¿Creamos algo juntos?</h2>
+      <p>Si tienes un proyecto, una idea o simplemente quieres hablar de diseño, escríbeme.</p>
+    </div>
+
+    <div class="contact-card reveal">
+
+      <div class="contact-left">
+
+        <span class="contact-small">Puedes escribirme a</span>
+
+        <a class="contact-email" href="mailto:vichecvarlop10@gmail.com">
+          vichecvarlop10@gmail.com
+          <span>↗</span>
+        </a>
+
+        <div class="social-links">
+
+          <a href="#" target="_blank">
+            Instagram <span>↗</span>
+          </a>
+
+          <a href="#" target="_blank">
+            Behance <span>↗</span>
+          </a>
+
+          <a href="#" target="_blank">
+            LinkedIn <span>↗</span>
+          </a>
+
+          <a
+            class="whatsapp"
+            href="https://wa.me/591XXXXXXXX"
+            target="_blank"
+          >
+            WhatsApp <span>↗</span>
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <form class="contact-form" id="contact-form">
+
+        <div class="form-row">
+
+          <label>
+            Nombre
+            <input
+              id="contact-name"
+              type="text"
+              placeholder="Tu nombre"
+              required
+            >
+          </label>
+
+          <label>
+            Correo
+            <input
+              id="contact-email"
+              type="email"
+              placeholder="tu@email.com"
+              required
+            >
+          </label>
+
+        </div>
+
+        <label>
+          Mensaje
+          <textarea
+            id="contact-message"
+            placeholder="Cuéntame sobre tu proyecto..."
+            required
+          ></textarea>
+        </label>
+
+        <button type="submit">
+          Enviar mensaje
+          <span>↗</span>
+        </button>
+
+      </form>
+
+    </div>
+
+
+    <div class="contact-bottom">
+      <span>© 2026 Victor Vargas</span>
+      <span>Cochabamba, Bolivia</span>
+    </div>
+
+  </div>
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
